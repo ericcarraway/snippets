@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vanilla Ajax</title>
+</head>
+<body>
+    <button onclick="makeAjaxCall();">Click</button><br />
+    <div id="result"></div>
+
+    <script>
+        var makeAjaxCall = function () {
+            'use strict';
+            var request = new XMLHttpRequest();
+            var url = 'https://codercamps.firebaseio.com/.json';
+            var successMsg = 'SUCCESS';
+
+            request.open('GET', url, true);
+
+            request.onload = function () {
+                // successful server response
+                if (this.status >= 200 && this.status < 400) {
+                    document.getElementById('result').innerHTML = successMsg;
+                    // sever responds, but with an error
+                } else {
+                    document.getElementById('result').innerHTML = this.response;
+                }
+            };
+
+            // communication error
+            request.onerror = function () {
+                document.getElementById('result').innerHTML = this.response;
+            };
+
+            request.send();
+        };
+    </script>
+</body>
+</html>

@@ -4,6 +4,7 @@
 
 
 
+
 #### The Simple Programmer Test
 ##### Credit: John Sonmez (http://simpleprogrammer.com/)
  1: Can you use source control effectively?
@@ -31,6 +32,7 @@
 12: Can you build an actual application?
 
 
+
 #### 11 Rules All Programmers Should Live By 
 ##### Credit: John Sonmez (http://simpleprogrammer.com/)
  1: Technology is how you get to the solution, it is not THE solution
@@ -54,6 +56,7 @@
 10: Best practices are context dependent
 
 11: Always strive to simplify
+
 
 
 #### The Joel Test

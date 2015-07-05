@@ -1,6 +1,6 @@
-'''
-command line basics
 
+command line basics
+```
 pwd    print working directory
        (where am I?)
 
@@ -25,4 +25,4 @@ ctrl + u  erase the complete line
 
 ctrl + c  cancel the currently running command
 
-'''
+```
